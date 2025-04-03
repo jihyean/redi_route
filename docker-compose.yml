@@ -11,7 +11,7 @@ services:
     networks:
       - app_network
     ports:
-      - "1000:1000"
+      - "2001:2001"
 
   redis:
     image: redis:alpine
@@ -29,7 +29,7 @@ services:
     networks:
       - app_network
     ports:
-      - "80:80"
+      - "2000:80"
 
 networks:
   app_network:
