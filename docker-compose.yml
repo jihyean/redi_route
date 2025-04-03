@@ -4,14 +4,14 @@ services:
   fastapi:
     build: .
     container_name: fastapi_app
-    environment:
-      - BASE_URL=http://moa
+    # environment:
+    #   - BASE_URL=http://moa
     depends_on:
       - redis
     networks:
       - app_network
     ports:
-      - "8000:8000"
+      - "1000:1000"
 
   redis:
     image: redis:alpine
